@@ -1,0 +1,471 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>grid布局 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="chapter2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    使用gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    技术文档写作规范和风格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                    ES6快速入门手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="grid1.html">
+            
+                <a href="grid1.html">
+            
+                    
+                    grid布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >grid布局</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="things-ive-learned-about-css-grid-layout">Things I&apos;ve Learned About CSS Grid Layout</h3>
+<p><em>by dudusky</em>
+<img src="https://cdn.tutsplus.com/webdesign/uploads/2013/11/examplecssgrid.png" alt=""></p>
+<hr>
+<h5 id="css-grid-looks-set-to-land-in-browsers-in--2017until-then-i-will-need-to-enable-grid-for-it-to-work">CSS grid looks set to land in browsers in  2017.Until then I will need to enable grid for it to work</h5>
+<hr>
+<h4 id="grid-is-designed-to-be-used-with-flexboxnot-instead-of-it">Grid is designed to be used with flexbox,not instead of it</h4>
+<h6 id="a-quick-way-to-think-about-it-is">A quick way to think about it is:</h6>
+<pre><code>*   Flexbox is for one dimensional layout(row or column)
+*   CSS grid is for two dimensional
+</code></pre><hr>
+<hr>
+<h3 id="the-downsides-to-css-grids">THe Downsides to CSS Grids</h3>
+<ul>
+<li>Potentially high amount of unused code.</li>
+<li>Restrictions on layout</li>
+<li>Fixed pixel rether than em/rem or percentage based layout.</li>
+<li>Set number of overrall columns.</li>
+<li>Non sematic markup</li>
+<li>Restrictions on nesting</li>
+</ul>
+<h6 id="heres-some-typicalpage-layout-html">Here&quot;s some typical&quot;page layout&quot; HTML:</h6>
+<pre><code>&lt;body&gt;
+  &lt;header class=&quot;site-header&quot;&gt;&lt;/header&gt;
+  &lt;main class=&quot;main-content&quot;&gt;&lt;/main&gt;
+  &lt;aside class=&quot;sidebar&quot;&gt;&lt;/aside&gt;
+  &lt;footer class=&quot;site-footer&quot;&gt;&lt;/footer&gt;
+&lt;/body&gt;
+</code></pre><p>All those major element are direct child of <code>&lt;body&gt;</code>,so<code>&lt;body&gt;</code> can be the grid and the four major elements are laid out on that grid.</p>
+<h4 id="browser-support">Browser Support</h4>
+<p>==Chrome: none
+Safari: none
+Firefox: none
+Opera: none
+IE: 10+
+Android: none
+IOS: none==</p>
+<h4 id="chrome">Chrome:</h4>
+<p>==chrome://flags/#enable-experimental-web-platformfeatures==.</p>
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/30/posts/27238/image/flag.png" alt=""></p>
+<h4 id="terminilogy">Terminilogy</h4>
+<hr>
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/30/posts/27238/image/grid-terms-lines-rows-columns-cells-.svg" alt=""></p>
+<ol>
+<li>grid lines</li>
+<li>columns</li>
+<li>rows</li>
+<li>cells</li>
+</ol>
+<hr>
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/30/posts/27238/image/grid-terms-gutters.svg" alt=""></p>
+<ol>
+<li>gutter</li>
+</ol>
+<hr>
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/30/posts/27238/image/grid-terms-area.svg" alt=""></p>
+<ol>
+<li>grid area</li>
+</ol>
+<h4 id="grid-rules">Grid Rules</h4>
+<ul>
+<li>Firstly we need to declare that our container element is a grid using a new value for the <code>display</code> property:<pre><code class="lang-css">   <span class="hljs-selector-class">.container</span> {
+   <span class="hljs-attribute">display</span>: grid;
+   }
+</code></pre>
+</li>
+</ul>
+<h4 id="conclusion">Conclusion</h4>
+<ol>
+<li>Create a conteiner element, and declare it<code>display: grid</code>.</li>
+<li>use that sae container to define the grid track using the <code>grid-template-colums</code>and <code>grid-template-rows</code>properties.</li>
+<li>place child elements within the container.</li>
+<li>Specify where ech child belongs on the grid by declaring its <code>grid-clumn</code>and <code>grid-row</code>.</li>
+<li>Grid will accept flexible units in combination with fixed units of measurnments.</li>
+<li>We needn&apos;t declare gutters within our <code>grid-templeta</code>,we can use the <code>grid-gap</code> properties instead.</li>
+<li><code>grid-gap</code> means we are less bound to positioning our grid items-we can hand more responsibiluty overto auto-placement.</li>
+</ol>
+<h1 id="flexible-units">Flexible Units</h1>
+<h3 id="relative-lengths">Relative lengths</h3>
+<table>
+<thead>
+<tr>
+<th>unit</th>
+<th>relative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>em</td>
+<td>font size of the element</td>
+</tr>
+<tr>
+<td>ex</td>
+<td>x-height of the element&quot;s font</td>
+</tr>
+<tr>
+<td>ch</td>
+<td>width of the &quot;0&quot; glyph in the element&apos;s font</td>
+</tr>
+<tr>
+<td>rem</td>
+<td>if (body{font-size:16px}){1rem = 16px}</td>
+</tr>
+<tr>
+<td>vw</td>
+<td>if(window.width=960px){1vm = 9.6px}</td>
+</tr>
+<tr>
+<td>vw</td>
+<td>if(window.height=1000px){1vh = 10px}</td>
+</tr>
+<tr>
+<td>vmin</td>
+<td>vmin = window.heigh&lt;window.width?window.height&amp;&amp;window.width</td>
+</tr>
+<tr>
+<td>vmax</td>
+<td>vmin = window.heigh&gt;window.width?window.height&amp;&amp;window.width</td>
+</tr>
+<tr>
+<td>fr</td>
+<td>Used to distribute ramaining space in a flex layout computaion</td>
+</tr>
+</tbody>
+</table>
+<h3 id="absolute-lengths">Absolute lengths:</h3>
+<table>
+<thead>
+<tr>
+<th>unit</th>
+<th>definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cm</td>
+<td>centimeters</td>
+</tr>
+<tr>
+<td>mm</td>
+<td>millimeters</td>
+</tr>
+<tr>
+<td>in</td>
+<td>inches;1inis equal to 2.54cm</td>
+</tr>
+<tr>
+<td>px</td>
+<td>pixels; 1px =</td>
+</tr>
+<tr>
+<td>pt</td>
+<td>points; 1pt =</td>
+</tr>
+<tr>
+<td>pc</td>
+<td>picas; 1pc = 12pt</td>
+</tr>
+</tbody>
+</table>
+<h5 id="em">em</h5>
+<pre><code class="lang-css">    <span class="hljs-selector-tag">body</span> {
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+    }
+    <span class="hljs-selector-tag">div</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.2px</span> <span class="hljs-comment">/*calculated at 14px*1.2=16.8px*/</span>
+    }
+</code></pre>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><span class="hljs-comment">&lt;!--font-size: 14px--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        Test <span class="hljs-comment">&lt;!-- 14 * 1.2 = 16.8px --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            Test <span class="hljs-comment">&lt;!-- 16.8 * 1.2 = 20.16px --&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                Test <span class="hljs-comment">&lt;!-- 20.16 * 1.2 = 24.192px --&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<h5 id="rem-stands-for-root">rem stands for &quot;root&quot;</h5>
+<pre><code class="lang-css">     <span class="hljs-selector-class">.container</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">70rem</span>; <span class="hljs-comment">/*70*14=980px*/</span>
+     }
+</code></pre>
+<h5 id="vh-and-vw">vh and vw</h5>
+<p>Responsive web design techniques rely heavily on percentage rules.However,CSS percentage isn&quot;t always the best solution for every problem. CSS width is relative to the nesrest containing parent element. What if you want to use the width of height of the viewport instead id the width of the parent elememt?</p>
+<pre><code class="lang-css">   <span class="hljs-selector-tag">div</span> {
+     <span class="hljs-attribute">width</span>:<span class="hljs-number">100vh</span> <span class="hljs-comment">/*1/100 of the height of the viewport*/</span>
+   }
+</code></pre>
+<ul>
+<li>For example,if the browser&quot;s height is <code>900px</code>, <code>1vh</code>would evaluate to 9px;</li>
+<li>If the viewport width is 750px,1hwwould evaluate to 7.5px;</li>
+</ul>
+<h5 id="vmin-and-vmax">vmin and vmax</h5>
+<p><code>vh</code>and <code>vw</code>are always relate to the viewport height and width,respectively,<code>vmin</code>and<code>vmax</code>are relared to the maximum or munimum of those widths and heights, dependig on which is smaller and larger.</p>
+<ul>
+<li>for example,if the browser was set to 1100px wide and the 700px tall,<code>1vmin</code>would be 7px and <code>1vmax</code> would be 11px.</li>
+</ul>
+<h3 id="calculationcalcminmax">Calculation:<code>calc()</code>,<code>min()</code>,<code>max()</code></h3>
+<ul>
+<li>Those function can be used wherever <code>length</code>,<code>frequenct</code>,<code>angle</code>,<code>time</code>,<code>number</code>values.</li>
+</ul>
+<h2 id="redefining-grid-areas-with-media-queries">Redefining Grid Areas with Media Queries</h2>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: ES6快速入门手册">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"grid布局","level":"1.4","depth":1,"previous":{"title":"ES6快速入门手册","level":"1.3","depth":1,"path":"chapter2.md","ref":"chapter2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"grid1.md","mtime":"2017-01-26T10:32:18.646Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-02T15:24:21.622Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
