@@ -1,5 +1,184 @@
-# A Modest Proposal
+# 技术文档写作规范和风格
 
-## For Preventing The Children of Poor People in Ireland From Being Aburden to Their Parents or Country, and For Making Them Beneficial to The Public
+​                                                                             待补充
 
-It is a melancholy object to those who walk through this great town or travel in the country, when they see the streets, the roads, and cabin doors, crowded with beggars of the female sex, followed by three, four, or six children, all in rags and importuning every passenger for an alms. These mothers, instead of being able to work for their honest livelihood, are forced to employ all their time in strolling to beg sustenance for their helpless infants: who as they grow up either turn thieves for want of work, or leave their dear native country to fight for the Pretender in Spain, or sell themselves to the Barbadoes.
+## 主旨
+
+> * 优雅简洁, 剔除糟粕和过时的内容, 突出实用和实践.
+> * 统一规范, 确保每一行代码都像是同一个人编写的.
+> * 方便查阅, 清晰的目录结构.
+> * 快速上手, 降低学习成本.
+> * 内容最新, 与最新技术保持同步.
+
+
+
+## 目录结构
+
+### A. 标准目录
+> 本目录适用于编程语言 / 框架的语法和API的教程.
+
+#### 简介
+
+* 版本(建议使用最新版本)
+* 背景
+* 基础
+
+#### 安装
+
+-    安装方式
+-    环境搭建
+
+#### 语法
+
+-    定义
+-    语法
+-    基本用法(2)
+-    应用场景(1)
+
+#### 进阶
+
+* 部分源码实现原理( 可选 )
+
+* 最佳实践( 面试题收集 )
+
+* 相关资源推荐
+
+* 学习路线图
+
+
+  ---
+
+
+
+
+### B. 案例目录
+
+> 本目录适用于完整案例的具体开发流程, step by step.
+
+#### 案例分析
+- 需求分析
+
+- 关键技术点
+
+
+#### 准备工作
+
+* 项目目录结构
+
+
+* 编程语言/框架/工具
+
+* 服务器/数据库
+
+
+#### 开发流程
+
+* 导语
+
+  > 简单概况要实现什么样的功能 , 使用哪些技术?
+
+
+* 布局 / 结构
+
+* 实现功能 
+
+* 演示
+
+
+
+#### 案例总结
+
+* 编程思想
+* 常见错误
+* 新技术
+* 参考资料
+
+
+
+
+---
+
+
+
+
+## 通用规范
+
+### 1. 标题
+
+> 标题可以分为五级, 请根据层级正确嵌套.
+
+- 一级标题：题目
+
+- 二级标题：文章章节的大标题
+
+- 三级标题：二级标题下面一级的小标题
+
+- 四级标题：三级标题下面某一方面的小标题
+
+
+### 2. 文本
+
+* 代码
+
+  > 如需要展示代码片段, 遵循标准代码规范.
+
+
+
+* 中文
+
+  > 使用半角标点
+
+ ```
+    错误：ＪａｖａＳｒｉｃｐｔ （ ＪＳ ） 是一种“轻量级”解释型的，或是ＪＩＴ编译型的程序设计语言。
+
+    正确：JavaScript ( JS ) 是一种"轻量级"解释型的, 或是JIT编译型的程序设计语言.
+ 
+ ```
+
+
+* 英文
+
+  > 区分大小写
+
+
+
+* 数字
+ > 数字左右需要空格
+
+  ```
+  错误：2011年5月15日，我订购了5台笔记本电脑与10台平板电脑。
+
+  正确：2011 年 5 月 15 日，我订购了 5 台笔记本电脑与 10 台平板电脑。
+  ```
+
+
+
+
+#### 3. 句子
+
+- 避免使用长句. 一个句子建议不超过 50 字或者正文的 2 行.
+- 尽量使用简单句和并列句, 避免使用复合句.
+- 避免使用形容词, 和代表个人主观的词汇.
+
+
+
+#### 4. 配图
+
+>不易理解的抽象的概念, 建议配图.
+
+
+
+#### 5. 写作格式
+- 使用Markdown语法书写文档
+
+- 保存为PDF格式
+
+- 使用模板
+
+- 协同撰写文档
+
+  ​
+
+
+
+

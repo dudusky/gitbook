@@ -1,5 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
-* [The Jabberwocky](chapter1.md)
-* [A Modest Proposal](chapter2.md)
+* [使用gitbook](README.md)
+* [技术文档写作规范和风格](chapter1.md)
+* [ES6快速入门手册](chapter2.md)
+
