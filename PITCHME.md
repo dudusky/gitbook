@@ -11,7 +11,7 @@ http://codepen.io/Rosa0205/
 git clone https://github.com/dudusky/ES6_tutorial_demo.git
 git clone https://github.com/dudusky/es6-tutorial.git
 ```
-
+---
 
 ## 一. ECMAScript快速概览
 
@@ -33,6 +33,7 @@ git clone https://github.com/dudusky/es6-tutorial.git
 * class类的继承
 * 模块化
 
+---
 
 ## 二. 如何开始使用ES6？
 
@@ -47,8 +48,7 @@ git clone https://github.com/dudusky/es6-tutorial.git
   $ npm install -g es-checker
 $ es-checker
   ```
-
-  ​
+---
 
 ### 2.  ES6转码工具Babel使用方法
 
@@ -62,6 +62,7 @@ $ es-checker
 >
 >  Babel在线转换http://babeljs.cn/repl/
 
+---
 
 *In*
 ```javascript
