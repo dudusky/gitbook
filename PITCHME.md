@@ -11,7 +11,7 @@ http://codepen.io/Rosa0205/
 git clone https://github.com/dudusky/ES6_tutorial_demo.git
 git clone https://github.com/dudusky/es6-tutorial.git
 ```
----
++++
 
 ## 一. ECMAScript快速概览
 
@@ -33,7 +33,7 @@ git clone https://github.com/dudusky/es6-tutorial.git
 * class类的继承
 * 模块化
 
----
++++
 
 ## 二. 如何开始使用ES6？
 
@@ -48,7 +48,7 @@ git clone https://github.com/dudusky/es6-tutorial.git
   $ npm install -g es-checker
 $ es-checker
   ```
----
++++
 
 ### 2.  ES6转码工具Babel使用方法
 
@@ -62,7 +62,7 @@ $ es-checker
 >
 >  Babel在线转换http://babeljs.cn/repl/
 
----
++++
 
 *In*
 ```javascript
@@ -77,8 +77,8 @@ $ es-checker
 });
 ```
 
++++
 
----
 #### 1. 准备工作:
 
   *  创建一个项目名为`babel_test`的文件夹.
@@ -88,7 +88,7 @@ $ es-checker
 
 
 ----------
-
++++
 
 #### 2. 安装babel-cli命令行工具
 > 在[node官网](https://nodejs.org/en/download/)安装node.js, 然后就可以使用npm包管理工具来安装babel-cli命令行工具
@@ -101,9 +101,7 @@ $ es-checker
   $ npm install --save-dev babel-preset-latest
 ```
 
-
-----------
-
++++
 
 #### 3. 在项目目录下创建隐藏文件`.babelrc`文件和`package.json`文件(可选)
 
@@ -131,9 +129,9 @@ $ es-checker
         "plugins": []
       }
 ```
++++
 
 
-----------
 
 #### 4. Babel-cli的基本使用方法:
 ```    
@@ -149,9 +147,9 @@ $ es-checker
     # 如果配置好package.json文件 可以使用以下快捷方式 等同于src -d lib
     $ npm run build
 ``` 
++++
 
 
-----------
 
 #### 5. babel-polyfill 的使用
 
