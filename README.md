@@ -48,9 +48,11 @@
 
 GitBook.com 上的每本书都使用 Git 项目来管理，所以，这里首先需要克隆需要编辑书籍的 Git 项目，登陆 GitBook.com 后，跳转到书籍的属性页面，如下图所示：
 
-![book properties](http://www.chengweiyang.cn/gitbook/assets/gitbook.com/book-properties.png)
+
 
 点击 "Edit Book" 上方的 "learn more"，将会展现此书籍的 Git 项目地址，以及简单的使用方法，如下图所示：
+
+
 
 
 
@@ -116,3 +118,10 @@ To https://github.com/dudusky/gitbook.git
 
 点击 "READ" 按钮就可以阅读书籍的内容了
 
+
+
+https://help.gitbook.com/books/what-are-change-requests.html
+
+
+
+![](https://help.gitbook.com/assets/editor-create-cr.png)
